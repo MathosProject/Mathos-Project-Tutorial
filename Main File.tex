@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\usepackage{marginnote}
+\usepackage{verbatim} % for the box
+\usepackage{fancyvrb} % for the box
+
+\usepackage{titletoc}
+\usepackage{listings}
+
+\lstset{language=C,
+numberstyle=\footnotesize,
+basicstyle=\ttfamily\footnotesize,
+numbers=left,
+rulesepcolor=\color{gray}, %fancy shadow for borders
+stepnumber=1,
+frame=shadowbox,
+breaklines=true}
+
+
+\usepackage{pgf}
+\usepackage{pgfpages}
+
+
+\usepackage{cite}
+\usepackage{url}
+
+
+
+%for chapter layout
+
+\usepackage{titlesec, blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{$|$}\hsp}{0pt}{\Huge\bfseries}
+
+
+
+
+
+
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+{\large Mathos Project}
+\\\
+
+{\huge Exploring the computational power for mathematical calculations}
+\line(1,0){350}
+\\\
+\\\
+{\small By Mathos Project Community} \\\
+\resizebox{\linewidth}{!}{\itshape $\Pi$} % or lower case
+\end{center}
+\end{titlepage}
+
+
+
+\setcounter{part}{-1}
+\setcounter{chapter}{0}
+\setcounter{section}{1}
+\tableofcontents
+
+\include{MCL/PartMathosCoreLibrary}
+
+\end{document}
