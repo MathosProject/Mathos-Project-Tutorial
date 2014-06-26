@@ -1,0 +1,264 @@
+%adapted from http://mathosproject.com/wiki/mathos-core-library/finance/
+
+\chapter{Finance}
+
+This part of library represents Time Value of Money functions.
+
+Time Value of Money (TVM) is an important concept in financial management. It can be used to compare investment alternatives and to solve problems involving loans, mortgages, leases, savings, and annuities.
+
+TVM is based on the concept that a dollar that you have today is worth more than the promise or expectation that you will receive a dollar in the future. Money that you hold today is worth more because you can invest it and earn interest. After all, you should receive some compensation for foregoing spending. For instance, you can invest your dollar for one year at a $6\%$ annual interest rate and accumulate $\$1.06$ at the end of the year.  You can say that the future value of the dollar is $\$1.06$ given a $6\%$ interest rate and a one-year period. It follows that the present value of the $\$1.06$ you expect to receive in one year is only $\$1$.
+
+A key concept of TVM is that a single sum of money or a series of equal, evenly-spaced payments or receipts promised in the future can be converted to an equivalent value today.  Conversely, you can determine the value to which a single sum or a series of future payments will grow to at some future date.
+
+\section{Present Value}
+\textbf{Present value}, also known as \textbf{present discounted value}, is a future amount of money that has been discounted to reflect its current value, as if it existed today. The present value is always less than or equal to the future value because money has interest-earning potential, a characteristic referred to as the time value of money.
+\begin{lstlisting}
+decimal PresentValue(decimal futureValue, decimal rateOfReturn, int numberOfPeriods, bool round = true)
+\end{lstlisting}
+Calculates the present value of the \textit{futureValue} for a specified \textit{rateOfReturn} over \textit{numberOfPeriods} periods. 
+
+\subsection{Parameters}
+\begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Parameter} & \textbf{Description}\\
+\hline
+\verb|decimal futureValue| & Future value (ex $100$)\\
+\verb|decimal rateOfReturn| &  Rate of return (ex $6$ for $6\%$)\\
+\verb|int numberOfPeriods| & Number of periods\\
+\verb|bool round| & Determines whether the result is rounded to $2$ decimal places\\
+\hline
+\end{tabular}
+\caption{Parameters of Present Value}
+\end{table}
+
+\subsection{Example}
+An individual wishes to determine how much money she would need to put into her money market account to have $\$100$ one year today if she is earning $5\%$ interest on her account, simple interest.
+\begin{lstlisting}
+PresentValue(100, 5, 1)
+\end{lstlisting}
+When it solve for PV, she would need $\$95.24$ today in order to reach $\$100$ one year from now at a rate of $5\%$ simple interest.
+
+% NEW SECTION HERE!!!
+
+
+\section{Net Present Value}
+\textbf{Net present value (NPV)} or \textbf{Net present worth (NPW)} of a time series of cash flows, both incoming and outgoing, is defined as the sum of the present values (PVs) of the individual cash flows of the same entity.
+\begin{lstlisting}
+decimal NetPresentValue(decimal initialInvestment, IList<decimal> cashFlow, decimal rateOfReturn, bool round)
+\end{lstlisting}
+Calculates the net present value for an investment with multiple case flows over equi-distant time intervals at a given rate of return
+\subsection{Parameters}
+\begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Parameter} & \textbf{Description}\\
+\hline
+\verb|decimal initialInvestment| & Initial investment (ex $10000$)\\
+\verb|IList<decimal> cashFlow| & List of expected cash flows from investment (ex $200$, $100$, $300$))\\
+\verb|decimal rateOfReturn| & Expected rate of return (ex $5$ for $5\%$)\\
+\verb|bool round| & Determines whether the result is rounded to $2$ decimal places\\
+\hline
+\end{tabular}
+\caption{Parameters of Net Present Value}
+\end{table}
+
+\subsection{Example}
+An initial investment on plant and machinery of $\$8320$ thousand is expected to generate cash inflows of $\$3411$ thousand, $\$4070$ thousand, $\$5824$ thousand and $\$2065$ thousand at the end of first, second, third and fourth year respectively. At the end of the fourth year, the machinery will be sold for $\$900$ thousand. Calculate the present value of the investment if the discount rate is $18\%$.
+
+\begin{lstlisting}
+decimal[] flow = new decimal[4] { 3411, 4070, 5824, 2065 + 900};
+NetPresentValue(8320, flow, 18)
+\end{lstlisting}
+Net Present value is $\$2567,67$ thousand.
+
+
+% NEW SECTION HERE!!!
+
+
+
+\section{Future Value}
+\textbf{Future value} is the value of an asset at a specific date. It measures the nominal future sum of money that a given sum of money is "worth" at a specified time in the future assuming a certain interest rate. (For an asset with interest compounded annually.)
+\begin{lstlisting}
+decimal FutureValue(decimal presentValue, decimal rateOfReturn, int numberOfPeriods, bool round = true)
+\end{lstlisting}
+Calculates the future value of the \textit{presentValue} for a specified \textit{rateOfReturn} over \textit{numberOfPeriods} periods.
+
+\subsection{Parameters}
+\begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Parameter} & \textbf{Description}\\
+\hline
+\verb|decimal presentValue| & Present value (ex $100$)\\
+\verb|decimal rateOfReturn| & Rate of return (ex $6$ for $6\%$)\\
+\verb|int numberOfPeriods| & Number of periods\\
+\verb|bool round| & Determines whether the result is rounded to $2$ decimal places\\
+\hline
+\end{tabular}
+\caption{Parameters of Future Value}
+\end{table}
+
+\subsection{Example}
+\begin{lstlisting}
+FutureValue(1000, 10, 5)
+\end{lstlisting}
+$\$1000$ invested for $5$ years at $10\%$, compounded annually has a future value of $\$1,610.51$.
+
+
+
+% NEW SECTION HERE!!!
+
+
+
+\section{Future Value Of An Annuity}
+\textbf{Future Value Of An Annuity} - the value of a group of payments at a specified date in the future. These payments are known as an annuity, or set of cash flows. The future value of an annuity measures how much you would have in the future given a specified rate of return or discount rate. The future cash flows of the annuity grow at the discount rate, and the higher the discount rate, the higher the future value of the annuity.
+\begin{lstlisting}
+decimal FutureValueOfAnnuity(decimal periodicPayment, decimal ratePerPeriod, int numberOfPeriods, bool round)
+\end{lstlisting}
+Calculates the future value of an annuity.
+\begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Parameter} & \textbf{Description}\\
+\hline
+\verb|decimal periodicPayment| & Periodic payment amount of annuity\\
+\verb|decimal ratePerPeriod| & Rate per period\\
+\verb|int numberOfPeriods| & Number of periods\\
+\verb|bool round| & Determines whether the result is rounded to $2$ decimal places\\
+\hline
+\end{tabular}
+\caption{Parameters of Future Value of An Annuity}
+\end{table}
+\subsection{Example}
+The basis is that providing a lump sum of $\$5,000$ today costs more than providing a cash flow of $\$1,000$ per year for five years. This is because if you provide the lump sum today, you could have invested it and received an additional return.
+\begin{lstlisting}
+FutureValueOfAnnuity(1000,6,5)
+\end{lstlisting}
+Using this example, and assuming a discount rate of $6\%$, the future value of an annuity that pays $\$1,000$ per year for five years is $\$5637$. This means that if you could get a return on your invested funds of $6\%$ per year, providing an annuity of $\$1,000$ per year would be worth $\$637$ ($\$5,637-\$5,000$) more to the issuer than giving a lump sum.
+
+
+
+% NEW SECTION HERE!!!
+
+
+
+\section{Annuity Payment (Present Value)}
+\textbf{Annuity Payment (Present Value)}. The annuity payment formula is used to calculate the periodic payment on an annuity. An annuity is a series of periodic payments that are received at a future date. The present value portion of the formula is the initial payout, with an example being the original payout on an amortized loan.
+\begin{lstlisting}
+decimal AnnuityPaymentPresentValue(decimal presentValue, decimal ratePerPeriod, int numberOfPeriods, bool round)
+\end{lstlisting}
+Returns the annuity payment calculated for a present value given the rate and number of periods.
+
+\subsection{Parameters}
+\begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Parameter} & \textbf{Description}\\
+\hline
+\verb|decimal presentValue| & Present value of annuity\\
+\verb|decimal rateOfReturn| & Rate of return (ex $6$ for $6\%$)\\
+\verb|int numberOfPeriods| & Number of periods\\
+\verb|bool round| & Determines whether the result is rounded to $2$ decimal places\\
+\hline
+\end{tabular}
+\caption{Parameters of Annuity Payment (Present Value)}
+\end{table}
+
+\subsection{Example}
+You can get a $\$150,000$ home mortgage at $7\%$ annual interest rate for $30$ years. Payments are due at the end of each month and interest is compounded monthly. How much will your payments be?
+\begin{align*}
+PVoa = 150,000 \qquad &\text{the loan amount} \\
+i =  0.5833333 \qquad &\text{interest per month (7 / 12)}\\
+n = 360\quad \text{periods} \qquad  &\text{(12 payments per year for 30 years)} \\
+\end{align*}
+\begin{lstlisting}
+AnnuityPaymentPresentValue(150000,0.5833333m,360)
+\end{lstlisting}
+Monthly payments are $\$997.95$
+
+
+
+% NEW SECTION HERE!!!
+
+
+
+\section{Annuity Payment (Future Value)}
+\textbf{Annuity Payment (Future Value)}. The annuity payment formula is used to calculate the cash flows of an annuity when future value is known. An annuity is denoted as a series of periodic payments.
+
+The annuity payment formula shown here is specifically used when the future value is known, as opposed to the annuity payment formula used when present value is known. There are not only mathematical differences between calculating an annuity when present value is known and when future value is known, but also differences in the real life application of the formulas.
+\begin{lstlisting}
+decimal AnnuityPaymentFutureValue(decimal futureValue, decimal ratePerPeriod, int numberOfPeriods, bool round)
+\end{lstlisting}
+Returns the annuity payment calculated for a future value given the rate and number of periods.
+
+\begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Parameter} & \textbf{Description}\\
+\hline
+\verb|decimal futureValue| & Future value of annuity\\
+\verb|decimal ratePerPeriod| & Rate of period (ex $6$ for $6\%$)\\
+\verb|int numberOfPeriods| & Number of periods\\
+\verb|bool round| & Determines whether the result is rounded to $2$ decimal places\\
+\hline
+\end{tabular}
+\caption{Parameters of Annuity Payment (Future Value)}
+\end{table}
+
+\subsection{Example}
+In 10 years, you will need $\$50,000$ to pay for college tuition. Your savings account pays $5\%$ interest compounded monthly.  How much should you save each month to reach your goal?
+
+\begin{align*}
+FVoa = 50,000, \qquad &\text{the future savings goal}\\
+i =  0.4167 \qquad & \text{interest per month (5 / 12)}\\
+n = 120\quad \text{periods} \qquad &\text{(12 payments per year for 10 years)}
+\end{align*}
+
+\begin{lstlisting}
+AnnuityPaymentFutureValue(50000,0.4167m,120)
+\end{lstlisting}
+Monthly payments are $\$321.99$
+
+
+
+
+% NEW SECTION HERE!!!
+
+
+
+
+\section{Remaining Balance Of Annuity}
+\textbf{Remaining Balance Of Annuity}. The formula for the remaining balance on a loan can be used to calculate the remaining balance at a given time(time n), whether at a future date or at present. The remaining balance on a loan formula is only used for a loan that is amortized, meaning that the portion of interest and principal applied to each payment is predetermined.
+\begin{lstlisting}
+decimal RemainingBalanceOfAnnuity(decimal originalValue, decimal payment, decimal ratePerPeriod, int numberOfPeriods, bool round)
+\end{lstlisting}
+Returns the remaining balance of an annuity given the original value, payment amount, rate per period and number of periods paid.
+
+
+\newpage % remove this if the table is placed directly under Parameters.
+\subsection{Parameters}
+\begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Parameter} & \textbf{Description}\\
+\hline
+\verb|decimal originalValue| & Original value of annuity\\
+\verb|decimal payment| & Payment amount\\
+\verb|decimal ratePerPeriod| & Rate of period (ex $6$ for $6\%$)\\
+\verb|int numberOfPeriods| & Number of periods\\
+\verb|bool round| & Determines whether the result is rounded to $2$ decimal places\\
+\hline
+\end{tabular}
+\caption{Parameters of Remaining Balance Of Annuity}
+\end{table}
+\subsection{Example}
+Your home mortgage is $\$100000$ at $7\%$ annual interest rate. Your monthly payments are $\$1000$. How much are you owe a bank after $5$ years payments?
+
+payment = $\$12000$ (annual payment $\$1000 * 12$ months)
+
+\begin{lstlisting}
+RemainingBalanceOfAnnuity(100000,12000,7,5)
+\end{lstlisting}
+
+Remaining Balance is $\$71246,30$

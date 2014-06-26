@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.8.17)  26 JUN 2014 12:32
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.8.17)  26 JUN 2014 17:50
 entering extended mode
 **Main*File.tex
-("C:\Users\Artem Los\Documents\Latex\Mathos Project\Main File.tex"
+("C:\Users\Artem Los\Documents\GitHub\Mathos-Project-Tutorial\Main File.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -670,11 +670,15 @@ Package: cite 2010/09/10  v 5.3
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\preprint\fullpage.sty"
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip49
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box39
-\beforetitleunit=\skip49
-\aftertitleunit=\skip50
+\beforetitleunit=\skip50
+\aftertitleunit=\skip51
 \ttl@plus=\dimen157
 \ttl@minus=\dimen158
 \ttl@toksa=\toks32
@@ -707,22 +711,23 @@ Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count148
 \c@blind@pangrammax=\count149
 )
-("C:\Users\Artem Los\Documents\Latex\Mathos Project\Main File.aux"
-("C:\Users\Artem Los\Documents\Latex\Mathos Project\MCL/PartMathosCoreLibrary.a
-ux"))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("C:\Users\Artem Los\Documents\GitHub\Mathos-Project-Tutorial\Main File.aux"
+("C:\Users\Artem Los\Documents\GitHub\Mathos-Project-Tutorial\MCL/PartMathosCor
+eLibrary.aux"))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count150
 \scratchdimen=\dimen162
@@ -740,66 +745,89 @@ Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
 (marginnote)             Extended position detection mode activated.
 \c@lstlisting=\count156
  ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 58.
+LaTeX Font Info:    Try loading font information for U+msa on input line 62.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 58.
+LaTeX Font Info:    Try loading font information for U+msb on input line 62.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (1.09952pt too wide) in paragraph at lines 57--59
+Overfull \hbox (1.3835pt too wide) in paragraph at lines 61--63
  [] 
  []
 
-[1
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-("C:\Users\Artem Los\Documents\Latex\Mathos Project\Main File.toc")
-\tf@toc=\write5
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
  [1
 
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+("C:\Users\Artem Los\Documents\GitHub\Mathos-Project-Tutorial\Main File.toc")
+\tf@toc=\write5
+
+[1
+
+] ("C:\Users\Artem Los\Documents\GitHub\Mathos-Project-Tutorial\Main File.lot")
+\tf@lot=\write6
+ [2
+
 ]
-("C:\Users\Artem Los\Documents\Latex\Mathos Project\MCL/PartMathosCoreLibrary.t
-ex" [2
+("C:\Users\Artem Los\Documents\GitHub\Mathos-Project-Tutorial\MCL/PartMathosCor
+eLibrary.tex" [3
 
 
 ]
-("C:\Users\Artem Los\Documents\Latex\Mathos Project\MCL/UncertaintyNumber.tex"
+("C:\Users\Artem Los\Documents\GitHub\Mathos-Project-Tutorial\MCL/Finance.tex"
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 12.
-[3
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 16.
+[4
 
-])) [4] ("C:\Users\Artem Los\Documents\Latex\Mathos Project\Main File.aux"
-("C:\Users\Artem Los\Documents\Latex\Mathos Project\MCL/PartMathosCoreLibrary.a
-ux")) ) 
+]
+Overfull \hbox (17.51712pt too wide) in paragraph at lines 53--63
+[][] 
+ []
+
+[5] [6] [7] [8])
+("C:\Users\Artem Los\Documents\GitHub\Mathos-Project-Tutorial\MCL/UncertaintyNu
+mber.tex" [9]
+Chapter 2.
+[10
+
+])) [11]
+("C:\Users\Artem Los\Documents\GitHub\Mathos-Project-Tutorial\Main File.aux"
+("C:\Users\Artem Los\Documents\GitHub\Mathos-Project-Tutorial\MCL/PartMathosCor
+eLibrary.aux")) ) 
 Here is how much of TeX's memory you used:
- 11861 strings out of 493921
- 200174 string characters out of 3144864
- 307124 words of memory out of 3000000
- 14906 multiletter control sequences out of 15000+200000
+ 11958 strings out of 493921
+ 202249 string characters out of 3144864
+ 308186 words of memory out of 3000000
+ 14990 multiletter control sequences out of 15000+200000
  16206 words of font info for 62 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 49i,6n,53p,625b,1145s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.p
-fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmitt10.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on "Main File.pdf" (5 pages, 153194 bytes).
+ 49i,10n,53p,746b,1616s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmitt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on "Main File.pdf" (12 pages, 196755 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
