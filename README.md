@@ -11,6 +11,9 @@ C# is the target environment, although it might be changed to Iron Ruby instead,
 
 TOOLS
 -----
+
+**Note** You can also submit a chapter in a simple word document or as html.
+
 In order to contribute, you can use TeXstudio together with MiKTeX
 * Download TeXstudio: http://texstudio.sourceforge.net/
 * Download MiKTeX: http://miktex.org/
@@ -18,7 +21,6 @@ In order to contribute, you can use TeXstudio together with MiKTeX
 IN CASE it does not work out, or if you don't want to install these programs, a portable version can be used: https://dl.dropboxusercontent.com/u/6416038/texstudio%2BMKPortable.zip
 
 
-_Note_ You can also submit a chapter in a simple word document or as html.
 
 TASKS
 ------
