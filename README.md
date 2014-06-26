@@ -18,7 +18,7 @@ In order to contribute, you can use TeXstudio together with MiKTeX
 IN CASE it does not work out, or if you don't want to install these programs, a portable version can be used: https://dl.dropboxusercontent.com/u/6416038/texstudio%2BMKPortable.zip
 
 
-*Note* You can also submit a chapter in a simple word document or as html.
+_Note_ You can also submit a chapter in a simple word document or as html.
 
 TASKS
 ------
