@@ -5,14 +5,14 @@ This is a tutorial that describes the way Mathos Project open source products ca
 
 AIM
 ----
-The aim of this book is to cover each module in Mathos Core Library (http://mathos.codeplex.com/) and Mathos Parser.
-C# is the target environment, although it might be changed to Iron Ruby instead, to allow Mahtos Core Library Interpreter to be used (http://mathosproject.com/product/mcli/)
+The aim of this book is to cover each module in the Mathos Core Library (http://mathos.codeplex.com/) and Mathos Parser.
+C# is the target language, although it might be changed to Iron Ruby instead, to allow Mahtos Core Library Interpreter to be used (http://mathosproject.com/product/mcli/).
 
 
 TOOLS
 -----
 
-**Note** You can also submit a chapter in a simple word document or as html.
+**Note** You can also submit a chapter either as a simple word document or as html.
 
 In order to contribute, you can use TeXstudio together with MiKTeX
 * Download TeXstudio: http://texstudio.sourceforge.net/
